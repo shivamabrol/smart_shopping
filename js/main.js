@@ -111,19 +111,18 @@ function updateBoxes(ev) {
     // });
 }
 
-function excelProcessing(file) {
-    console.log('reached')
-    console.log(file)
-}
 
 function download(filename, text) {
-
+    console.log('Not working')
 
     var element = document.createElement('a');
     var today = new Date();
 
+    var addText = document.getElementById('addText')
+
     var text = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
-    + ' \n ' +document.getElementById('answer').innerText;
+    + ' \n ' +document.getElementById('answer').innerText + addText.value;
+
 
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
     element.setAttribute('download', filename);
