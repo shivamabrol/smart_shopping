@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Smart Shopping Cart</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <div class="grid-container">
+        <div class="aisles">
+            <div x='500' y='100' id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="fruit_apple1" src="img/apple.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="icecream_f1" src="img/ice_cream.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="drinks_d1" src="img/soda.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="vegetable_potato" src="img/potato.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="misc_question" src="img/pasta.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="fruit_apple1" src="img/apple.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="icecream_f1" src="img/ice_cream.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="drinks_d1" src="img/soda.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="vegetable_potato" src="img/potato.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="misc_question" src="img/pasta.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="fruit_apple1" src="img/apple.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="icecream_f1" src="img/ice_cream.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="drinks_d1" src="img/soda.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="vegetable_potato" src="img/potato.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="misc_question" src="img/pasta.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="fruit_apple1" src="img/apple.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="icecream_f1" src="img/ice_cream.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="drinks_d1" src="img/soda.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="vegetable_potato" src="img/potato.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="misc_question" src="img/pasta.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="fruit_apple1" src="img/apple.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="icecream_f1" src="img/ice_cream.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="drinks_d1" src="img/soda.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="vegetable_potato" src="img/potato.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+                <img id="misc_question" src="img/pasta.jpeg" draggable="true" ondragstart="drag(event)" width="60" height="80">
+        
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Aisles </text>
+            </div>
+        </div>
+        <div class="fruits">
+            <div x='500' y='100' id="fruits" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Fruits and Veggies </text>
+            </div>
+        </div>
+
+        <div class="clock">
+
+            <div class="container">
+                <div class="buttons-div">
+                    <button type="button" class="buttons left" id="startStopWatch">Start</button>
+                    <button type="button" class="buttons right" id="pauseStopWatch">End</button>
+                </div>
+                <canvas id="stopWatchCanvas" width="500" height="500"></canvas>
+            </div>
+    
+        </div>
+        <div class="dairy">
+            <div x='500' y='100' id="ice_cream" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Ice cream </text>
+            </div>
+
+        </div>
+        <div class="drinks" id = "drinks" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div x='500' y='100' id="div1">
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Drinks </text>
+            </div>
+        </div>
+        <div class="misc" id = "misc" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div x='500' y='100' id="div1">
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Misc</text>
+            </div>
+        </div>
+
+        <div class="finditems">
+            <div x='500' y='100' id="itemfinder" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <text x="210" y="50" font-family="Verdana" font-size="20" fill="black"> Find Item </text>
+            </div>
+        </div>
+
+        <div class="map">
+            <img id="costco_map" src="img/map.png" draggable="true" ondragstart="drag(event)">
+                    <canvas id='myCanvas' width='536px' height='536px'></canvas>
+
+        </div> 
+
+
+        <div class="smart-billing" x='500' y='100'>
+
+            <text x="210" y="50" font-family="Verdana" font-size="10" fill="green"> Billing Items </text>
+            <div id = "answer"></div>
+    
+            <button onclick="billGeneration()">Generate Bill</button>
+            <!-- <button type="button" disabled>Download bill</button> -->
+
+            <form onsubmit="download(this['name'].value, this['text'].value)">
+                <input type="text" name="name" value="Bill">
+                <textarea name="text"></textarea>
+                <input type="submit" id = "download_button" disabled value="Download">
+            </form>
+
+        </div> 
+
+        <div>
+
+
+        
+    </div>
+    <div> 
+        <div>
+            <label for="input-file">Write what you want to buy or upload a list</label><br>
+            <input type="file" id="input-file">
+           </div>
+           
+           <textarea id="content-target"></textarea>
+        <button id="simulation" onclick="autoBuyitems()">Buy it for me</button>
+    </div>
+
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="js/main.js"></script>
+    
+
+
+</body>
+
+</html>
