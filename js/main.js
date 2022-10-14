@@ -16,15 +16,11 @@ const desk = {
 function billGeneration() {
     console.log('This will work now')
 
-    document.getElementById('answer').innerHTML = `
+    document.getElementById('addText').value = `
     ${fruits} fruits were added : ${fruits*10}
-    <br>
     ${ice_cream} ice_cream were added : ${ice_cream*10}
-    <br>
     ${drinks} drinks were added : ${drinks*10}
-    <br>
     ${misc}  misc were added : ${misc*10}
-
     `
 
     const button = document.getElementById('download_button')
@@ -170,7 +166,7 @@ function Draw(){
     
     var ctx = cnvs.getContext("2d");
     ctx.beginPath();
-    ctx.arc(100*Math.random() + 100, 100*Math.random() + 100, 10, 0, 2 * Math.PI, false);
+    ctx.arc(300*Math.random() + 100, 300*Math.random() + 100, 10, 0, 2 * Math.PI, false);
     ctx.lineWidth = 3;
     ctx.strokeStyle = 'black';
     ctx.stroke();
